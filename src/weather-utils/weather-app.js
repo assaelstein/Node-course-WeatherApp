@@ -23,21 +23,14 @@ if (!inputLocation) {
       if (error) {
         return console.log("Error", error);
       }
+      console.log(latitude);
+      console.log(longitude); //for precise location data
+
       console.log(location); //location info
       console.log(forecastData); //weather info
     });
   });
 }
-
-
-
-module.exports = {
-
-
-
-
-}
-
 
 
 

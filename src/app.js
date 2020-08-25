@@ -54,7 +54,12 @@ app.get(
         forecast(latitude, longitude, (error, forecastData) => {
           console.log(location); //location info
           console.log(forecastData); //weather info
-          res.send({ forecast: forecastData, location: location });
+          res.send({
+            forecast: forecastData,
+            location: location,
+            latitude: latitude,
+            longitude: longitude,
+          });
         });
       }
     );

@@ -31,9 +31,25 @@ weatherForm.addEventListener("submit", (e) => {
 
         console.log(data_weather.location);
         console.log(data_weather.forecast);
+        console.log(data_weather.latitude);
+        console.log(data_weather.longitude);
+        //including data for location
 
-        messageOne.textContent = data_weather.location;
-        messageTwo.textContent = data_weather.forecast;
+        messageOne.textContent =
+          "Latitude and Longitude are:  is: " +
+          data_weather.latitude +
+          "," +
+          data_weather.longitude;
+
+        (" | "); //data_weather.location;
+
+        messageTwo.textContent =
+          "the location is: " +
+          data_weather.location +
+          " | " +
+          " The weather is: " +
+          data_weather.forecast;
+
         /* messageTwo.textContent =
           "temperature: " +
           data_weather.temperature +

@@ -48,7 +48,8 @@ const forecast = (latitude, longitude, callback) => {
           " The uv index is: " +
           response.body.current.uv_index +
           ". The general weather is: " +
-          response.body.current.weather_descriptions[0]
+          response.body.current.weather_descriptions[0] +
+          ". "
       );
     }
   });
