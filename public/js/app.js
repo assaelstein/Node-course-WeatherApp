@@ -13,7 +13,7 @@ weatherForm.addEventListener("submit", (e) => {
 
   const location = search.value; //value extracts the typed value
 
-  const url = "http://localhost:3000/weather/places?search=" + location;
+  const url = "/weather/places?search=" + location; //changed it so can also run on Heroku
   messageOne.textContent = "";
   messageTwo.textContent = "loading...";
 

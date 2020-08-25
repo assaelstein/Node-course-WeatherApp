@@ -6,6 +6,7 @@ const forecast = require("./weather-utils/weather-details.js");
 const geoCode = require("./weather-utils/location-details.js");
 
 const app = express();
+const port = process.env.PORT || 3000; //the first for Horoku and the 2nd for local
 
 //Define Paths for Express Config.
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -152,9 +153,11 @@ app.get("*", (req, res) => {
 });
 
 //listening
-app.listen(3000, () => {
-  console.log("Server is up on port 3000.");
+app.listen(port, () => {
+  console.log("Server is up on port " + port);
 });
+
+//running locally, need port 3000
 //use this to check which ports are running: sudo lsof -i :3000
 //then canterminate via: kill -9 PID
 //lsof -t -i tcp:3000 | xargs kill ; this kills everything running
