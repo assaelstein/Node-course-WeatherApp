@@ -162,4 +162,3 @@ app.listen(3000, () => {
 //regarding "nodemon", can add other files to watch via: nodemon [file name] -e js,hbs,etc.; the -e is for extension
 // bu, need to run it from the higher level file which includes the js and hbs files, in this case: nodemon src/app.js -e js,hbs
 //heroku login -i
- 
