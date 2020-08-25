@@ -1,0 +1,73 @@
+body {
+  color: #333333;
+  font-family: arial;
+  max-width: 1000px; /*max width of content on the page  */
+  margin: 0 auto; /* 0 is applied to top & bottom, auto is for left & right; area between edge of bx and otherthings */
+  padding: 0 16px; /* how big the area is between edges of the box and the content inside */
+
+  display: flex; /*flex-box*/
+  flex-direction: column; /* default isrow, l-r*/
+  min-height: 100vh; /* vh- view port height*/
+}
+
+header {
+  margin-top: 16px; /* also have  */
+  margin-bottom: 48px;
+}
+
+.main-content {
+  flex-grow: 1; /*main content takes up all left over content*/
+}
+footer {
+  color: #363535;
+  background: white;
+  border-top: 2px solid #eeeeee; /* also have border left, right, top and bottom */
+  margin-top: 16px;
+  padding: 16px 0; /*16px fortop and bottom, and 0 for left and right  */
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
+  background: #888888;
+  color: white;
+  padding: 8px;
+}
+
+header a {
+  /* targetting links only within the header */
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none; /* this removes the underline from the link  */
+}
+
+footer a {
+  /* targetting links only within the header */
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none; /* this removes the underline from the link  */
+}
+
+a {
+  /* targetting links only within the header */
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none; /* this removes the underline from the link  */
+}
+
+.potrait {
+  /* spcifiying a particular image  */
+
+  width: 30px;
+}
+/*  */

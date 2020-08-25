@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" href="/css/styles.css">
+
+
+<head>
+
+</head>
+
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>how is your (internal) weather, how are you feeling today?</p>
+        <p>Sad | Happy | Anxious | Unsure | Calm | Excited</p>
+        <p>try mindfulness to get intouch with your weather</p>
+
+        <!-- <a href="/weather/places">location search</a>-->
+
+
+        <form>
+
+            <input placeholder="Location for weather">
+            <button>Search</button>
+
+
+        </form>
+
+
+        <p id="message-1"></p>
+        <p id="message-2"> </p>
+
+
+
+    </div>
+
+
+
+
+
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
