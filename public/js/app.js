@@ -36,7 +36,7 @@ weatherForm.addEventListener("submit", (e) => {
         //including data for location
 
         messageOne.textContent =
-          "Latitude and Longitude are:  is: " +
+          "Latitude and Longitude are: " +
           data_weather.latitude +
           "," +
           data_weather.longitude;
